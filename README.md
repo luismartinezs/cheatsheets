@@ -187,3 +187,11 @@ eslint filename.js
 follow this: https://github.com/yannickcr/eslint-plugin-react
 
 npm install eslint --save-dev
+
+## In case of messed up dependencies:
+
+Delete node_modules and package-lock.json
+
+npm install
+
+[Source](https://npm.community/t/cannot-read-property-match-of-undefined/203/3)
