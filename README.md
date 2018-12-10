@@ -132,13 +132,15 @@ it("Should do Y", function() {
 
 npm install react-modal
 
+If it fails, do npm install and try again
+
 ## Github deploy while using React:
 
 If you follow these steps it should work
 
 1. Create new repo in github
-2. Create react app project
-3. Clone github repo: git clone https://github.com/user/repository.git
+2. Create react app project, and initiatie git local repo: git init, git add ., git commit -m "first commit"
+3. Set github repo as your remote repo: git remote origin https://github.com/user/repository.git
 4. Make changes to the local repo
 5. npm run build
 6. Paste `"homepage": "http://username.github.io/myapp"` in package.json, after "private" (change the url)
@@ -150,7 +152,7 @@ If you follow these steps it should work
 8. Run: npm install --save-dev gh-pages
 9. Run: npm run deploy
 10. In git-hub > repo > settings, selectsource gh-pages branch, save
-11. Try the link provided, if it doesn't work, select anotehr branch, save, select again gh-pages, save. Reload page
+11. Try the link provided, if it doesn't work, select another branch, save, select again gh-pages, save. Reload page. It may take a few seconds/minutes for the web to show up.
 
 ## jquery
 
