@@ -7,6 +7,7 @@ I use Windows 10, Visual Studio Code and npm.
 ## [Create a new React app](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
 
 npm install -g create-react-app: install react globally
+
 create-react-app appName
 
 open /go to new dir appName with VSC
