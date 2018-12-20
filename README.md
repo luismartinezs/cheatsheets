@@ -216,10 +216,10 @@ npm install
         - Import objects to test: `const testMe = require('./filename');`
         - Create a test suite, e.g:
 ```
-describe('u function', () => {
+describe('test suite', () => {
 
-    test('u(0)', () => {
-        expect(u(0)).toBe(1);
+    test('testMe', () => {
+        expect(true).toBe(true);
     })
 
 })
