@@ -6,9 +6,9 @@ I currently use Windows 10, Visual Studio Code and npm.
 
 - [Create a new React app](#create-a-new-React-app)
 - [Npm start using different browsers](#npm-start-using-different-browsers)
-- [React + boostrap](#react-bootstrap)
-- [React + redux](#react-redux)
-- [Fontawesome + react](#fontawesome-react)
+- [React + boostrap](#react--bootstrap)
+- [React + redux](#react--redux)
+- [Fontawesome + react](#fontawesome--react)
 - [Debugging in Chrome](#debugging-in-chrome)
 - [Jasmine](#jasmine)
 - [React modal](#react-modal)
@@ -19,7 +19,7 @@ I currently use Windows 10, Visual Studio Code and npm.
 - [ESLINT-REACT](#ESLINT-REACT)
 - [In case of messed up dependencies](#in-case-of-messed-up-dependencies)
 - [Jest](#jest)
-- [JEST + REACT](#jest-+-react)
+- [JEST + REACT](#jest--react)
 
 ## [Create a new React app](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
 
