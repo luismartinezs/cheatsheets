@@ -195,3 +195,16 @@ Delete node_modules and package-lock.json
 npm install
 
 [Source](https://npm.community/t/cannot-read-property-match-of-undefined/203/3)
+
+## [JEST](https://jestjs.io/docs/en/getting-started)
+- npm install --save-dev jest
+- Given a file filename.js to test, create a filename.test.js
+- npm test filename.test.js
+- Add to package.json:
+```
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+```
