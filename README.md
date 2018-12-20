@@ -5,6 +5,20 @@ Things I keep for utility and quick reference, mostly commands
 I currently use Windows 10, Visual Studio Code and npm.
 
 - [Create a new React app](#create-a-new-React-app)
+- [Npm start using different browsers](#npm-start-using-different-browsers)
+- [React + boostrap](#react-bootstrap)
+- [React + redux](#react-redux)
+- [Fontawesome + react](#fontawesome-react)
+- [Debugging in Chrome](#debugging-in-chrome)
+- [Jasmine](#jasmine)
+- [React modal](#react-modal)
+- [Github deploy while using React](#github-deploy-while-using-react)
+- [jquery](#jquery)
+- [Bootstrap](#bootstrap)
+- [ESLINT](#ESLINT)
+- [ESLINT-REACT](#ESLINT-REACT)
+- [In case of messed up dependencies](#in-case-of-messed-up-dependencies)
+- [Jest](#jest)
 
 ## [Create a new React app](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
 
