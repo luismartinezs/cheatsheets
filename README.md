@@ -2,7 +2,9 @@
 
 Things I keep for utility and quick reference, mostly commands
 
-I use Windows 10, Visual Studio Code and npm.
+I currently use Windows 10, Visual Studio Code and npm.
+
+[Create a new React app](#Create a new React app)
 
 ## [Create a new React app](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
 
