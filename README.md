@@ -197,6 +197,7 @@ npm install
 [Source](https://npm.community/t/cannot-read-property-match-of-undefined/203/3)
 
 ## [JEST](https://jestjs.io/docs/en/getting-started)
+### Setup:
 - npm install --save-dev jest
 - Given a file filename.js to test, create a filename.test.js
 - npm test filename.test.js
@@ -207,4 +208,19 @@ npm install
     "test": "jest"
   }
 }
+```
+- remove package-lock.json and do again `npm install` if something does't work
+### Use:
+- In the file to test, export the required objects: `module.exports = testMe;`
+- In a file fileName.test.js:
+        - Import objects to test: `const testMe = require('./filename');`
+        - Create a test suite, e.g:
+```
+describe('u function', () => {
+
+    test('u(0)', () => {
+        expect(u(0)).toBe(1);
+    })
+
+})
 ```
