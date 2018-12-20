@@ -19,7 +19,7 @@ I currently use Windows 10, Visual Studio Code and npm.
 - [ESLINT-REACT](#ESLINT-REACT)
 - [In case of messed up dependencies](#in-case-of-messed-up-dependencies)
 - [Jest](#jest)
-- [JEST + REACT](#jest-react)
+- [JEST + REACT](#jest-+-react)
 
 ## [Create a new React app](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
 
