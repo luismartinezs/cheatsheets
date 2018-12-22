@@ -169,7 +169,7 @@ If you follow these steps it should work
 ```
 8. Run: npm install --save-dev gh-pages
 9. Run: npm run deploy
-10. In git-hub > repo > settings, selectsource gh-pages branch, save
+10. In git-hub > repo > settings, under the heading GitHub Pages / source, select gh-pages branch, and save
 11. Try the link provided, if it doesn't work, select another branch, save, select again gh-pages, save. Reload page. It may take a few seconds/minutes for the web to show up.
 
 ## jquery
