@@ -20,6 +20,8 @@ I currently use Windows 10, Visual Studio Code and npm.
 - [In case of messed up dependencies](#in-case-of-messed-up-dependencies)
 - [Jest](#jest)
 - [JEST + REACT](#jest--react)
+- [SASS](#sass)
+- [AUTOPREFIXER](#autoprefixer)
 
 ## [Create a new React app](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
 
@@ -316,3 +318,16 @@ test("Link changes the class when hovered", () => {
   expect(tree).toMatchSnapshot();
 });
 ```
+
+## SASS
+- Check your version and help with `sass --version` and `sass --help`
+- Install globally, if it's not installed: `npm install -g sass`
+- Generate CSS from SCSS: `sass path/input.scss path/output.css`
+- Or watch changes to the scss file: `sass --watch path/input.scss path/output.css`
+
+## [AUTOPREFIXER](https://css-tricks.com/autoprefixer/)
+Autoprefixer automatically applies vendor prefixes to an input css file and outputs a new css file
+- `npm install -g grunt-cli`
+- `npm install grunt-contrib-watch grunt-autoprefixer`
+- Create gruntfile.js with contents from above link. Don't blindly copy and paste the content, modify it as per your requirements
+- Run `grunt watch`
