@@ -25,35 +25,35 @@ I currently use Windows 10, Visual Studio Code and npm.
 
 ## [Create a new React app](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
 
-npm install -g create-react-app: install react globally
+`npm install -g create-react-app`: install react globally
 
-create-react-app appName
+`create-react-app appName`
 
 open /go to new dir appName with VSC
 
 debug: create launch.json and change the port of the url from 8080 to 3000
 
-npm start: run the app in the browser locally
+`npm start`: run the app in the browser locally
 
 ### Npm start using different browsers:
 
-create and set value of EXPORT env, e.g.: SET BROWSER=firefox
+create and set value of EXPORT env, e.g.: `SET BROWSER=firefox`
 
-npm start
+`npm start`
 
-to reset it: SET BROWSER=opera
+to reset it: `SET BROWSER=opera`
 
-See list of all env variables: SET
+See list of all env variables: `SET`
 
 ## React + boostrap
 
 Install react
 
-npm install --save react-bootstrap bootstrap@3
+`npm install --save react-bootstrap bootstrap@3`
 
 remove package-lock.json
 
-npm install
+`npm install`
 
 add to index.js:
 
@@ -68,27 +68,27 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 
 Install react
 
+```
 npm install --save redux
-
 npm install --save react-redux
-
 npm install --save-dev redux-devtools
+```
 
 Add this to App.js:
 
 `import { Provider, connect } from 'react-redux'`
 
-npm install
+`npm install`
 
 [Basic React-Redux setup](https://gist.github.com/luismartinezs/3fa20100ae88efeb62714531bbdecdf5)
 
 ## Fontawesome + react
 
+```
 npm i --save @fortawesome/fontawesome-svg-core
-
 npm i --save @fortawesome/free-solid-svg-icons
-
 npm i --save @fortawesome/react-fontawesome
+```
 
 add this to App.js:
 
@@ -118,23 +118,23 @@ During debugging, right click line: continue here
 
 ### Local install:
 
+```
 npm install --save-dev jasmine
-
 node node_modules/jasmine/bin/jasmine init
+```
 
 package.json: `"scripts": { "test": "jasmine" }`
 
-npm test
+`npm test`
 
 ### Global install:
 
+```
 npm install -g jasmine
-
 jasmine init
-
-jasmine examples: useful to have a reference to create the tests
-
-jasmine (run tests)
+jasmine examples //useful to have a reference to create the tests
+jasmine //(run tests)
+```
 
 ### Basic test
 
@@ -150,27 +150,27 @@ it("Should do Y", function() {
 
 ## React modal
 
-npm install react-modal
+`npm install react-modal`
 
-If it fails, do npm install and try again
+If it fails, do `npm install` and try again
 
 ## Github deploy while using React:
 
 If you follow these steps it should work
 
 1. Create new repo in github
-2. Create react app project, and initiatie git local repo: git init, git add ., git commit -m "first commit"
-3. Set github repo as your remote repo: git remote origin https://github.com/user/repository.git
+2. Create react app project, and initiatie git local repo: `git init`, `git add .`, `git commit -m "first commit"`
+3. Set github repo as your remote repo: `git remote origin https://github.com/user/repository.git`
 4. Make changes to the local repo
-5. npm run build
+5. `npm run build`
 6. Paste `"homepage": "http://username.github.io/myapp"` in package.json, after "private" (change the url)
 7. Add this to package.json after eject key
 ```
 "predeploy": "npm run build",
 "deploy": "gh-pages -d build"
 ```
-8. Run: npm install --save-dev gh-pages
-9. Run: npm run deploy
+8. Run: `npm install --save-dev gh-pages`
+9. Run: `npm run deploy`
 10. In git-hub > repo > settings, under the heading GitHub Pages / source, select gh-pages branch, and save
 11. Try the link provided, if it doesn't work, select another branch, save, select again gh-pages, save. Reload page. It may take a few seconds/minutes for the web to show up.
 
@@ -196,31 +196,31 @@ Google CDN: `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jqu
 
 Readme: https://eslint.org/docs/user-guide/configuring
 
+```
 npm install --save-dev eslint
-
 eslint --init
-
 eslint filename.js
+```
 
 ## ESLINT-REACT
 
 follow this: https://github.com/yannickcr/eslint-plugin-react
 
-npm install eslint --save-dev
+`npm install eslint --save-dev`
 
 ## In case of messed up dependencies:
 
 Delete node_modules and package-lock.json
 
-npm install
+`npm install`
 
 [Source](https://npm.community/t/cannot-read-property-match-of-undefined/203/3)
 
 ## [JEST](https://jestjs.io/docs/en/getting-started)
 ### Setup:
-- npm install --save-dev jest
+- `npm install --save-dev jest`
 - Given a file filename.js to test, create a filename.test.js
-- npm test filename.test.js
+- `npm test filename.test.js`
 - Add to package.json:
 ```
 {
@@ -249,7 +249,7 @@ describe('test suite', () => {
 
 create-react-app already includes jest
 
-npm i react-test-renderer
+`npm i react-test-renderer`
 
 Sample test:
 ```
