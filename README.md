@@ -322,12 +322,24 @@ test("Link changes the class when hovered", () => {
 ## SASS
 - Check your version and help with `sass --version` and `sass --help`
 - Install globally, if it's not installed: `npm install -g sass`
-- Generate CSS from SCSS: `sass path/input.scss path/output.css`
+- Generate CSS from SCSS: `sass path/input.scss path/output.css`, make sure the paths are correct and relative to the root.
 - Or watch changes to the scss file: `sass --watch path/input.scss path/output.css`
 
 ## [AUTOPREFIXER](https://css-tricks.com/autoprefixer/)
 Autoprefixer automatically applies vendor prefixes to an input css file and outputs a new css file
 - `npm install -g grunt-cli`
 - `npm install grunt-contrib-watch grunt-autoprefixer`
-- Create a Gruntfile.js in the root with contents from [this link](https://css-tricks.com/autoprefixer/). Don't blindly copy and paste the content, modify it as per your requirements
+- Create a Gruntfile.js in the root with contents from [this link](https://css-tricks.com/autoprefixer/). Don't blindly copy and paste the content, modify it as per your requirements.
+  - Here, the first file will be the output and the second file will be the input. Make sure the paths are relative to the root folder, and that the Gruntfile.js is in the root folder:
+```
+files: {
+          'src/style.css': 'src/style-transpiled.css'
+      }
+```
+  - Here, make sure the `files: ['path/filename'],` is correct. It should be the same as the second item in the previous step:
+```
+files: {
+          'src/style.css': 'src/style-transpiled.css'
+      }
+```
 - Run `grunt watch`
