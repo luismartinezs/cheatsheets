@@ -338,8 +338,9 @@ files: {
 ```
   - Here, make sure the `files: ['path/filename'],` is correct. It should be the same as the second item in the previous step:
 ```
-files: {
-          'src/style.css': 'src/style-transpiled.css'
-      }
+styles: {
+              files: ['src/style-transpiled.css'],
+              tasks: ['autoprefixer']
+          }
 ```
 - Run `grunt watch`
