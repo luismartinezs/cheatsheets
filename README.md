@@ -329,5 +329,5 @@ test("Link changes the class when hovered", () => {
 Autoprefixer automatically applies vendor prefixes to an input css file and outputs a new css file
 - `npm install -g grunt-cli`
 - `npm install grunt-contrib-watch grunt-autoprefixer`
-- Create gruntfile.js with contents from above link. Don't blindly copy and paste the content, modify it as per your requirements
+- Create gruntfile.js with contents from [this link](https://css-tricks.com/autoprefixer/). Don't blindly copy and paste the content, modify it as per your requirements
 - Run `grunt watch`
