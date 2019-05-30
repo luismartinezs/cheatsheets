@@ -23,7 +23,7 @@ I currently use ~~Windows 10~~macOSX, Visual Studio Code and npm.
 - [SASS](#sass)
 - [AUTOPREFIXER](#autoprefixer)
 - [Deploy basic html site to github pages](#deploy-basic-html-site-to-github-pages)
-- [Point custom domain hosted by GoDaddy to site hosted in github pages](point-custom-domain-hosted-by-godaddy-to-site-hosted-in-github-pages)
+- [Point domain to github pages](#point-domain-to-github-pages)
 
 ## [Create a new React app](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
 
@@ -353,7 +353,7 @@ styles: {
 - There must be a master or a gh-pages branch
 - In options > GitHUb Pages, select your master or gh-pages branch as the source
 
-## Point custom domain hosted by GoDaddy to site hosted in github pages
+## Point domain to github pages
 Assuming that you own a domain and it is hosted in GoDaddy.
 - Navigate to your GoDaddy account > Domains
 - Click on your domain name
