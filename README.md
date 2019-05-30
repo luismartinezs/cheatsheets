@@ -23,7 +23,7 @@ I currently use ~~Windows 10~~macOSX, Visual Studio Code and npm.
 - [SASS](#sass)
 - [AUTOPREFIXER](#autoprefixer)
 - [Deploy basic html site to github pages](#deploy-basic-html-site-to-github-pages)
-- [ Point custom domain hosted by GoDaddy to site hosted in github pages](point-custom-domain-hosted-by-GoDaddy-to-site-hosted-in-github-pages)
+- [Point custom domain hosted by GoDaddy to site hosted in github pages](point-custom-domain-hosted-by-godaddy-to-site-hosted-in-github-pages)
 
 ## [Create a new React app](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
 
