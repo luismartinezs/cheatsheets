@@ -2,7 +2,7 @@
 
 Things I keep for utility and quick reference, mostly commands
 
-I currently use Windows 10, Visual Studio Code and npm.
+I currently use ~~Windows 10~~macOSX, Visual Studio Code and npm.
 
 - [Create a new React app](#create-a-new-React-app)
 - [Npm start using different browsers](#npm-start-using-different-browsers)
@@ -344,3 +344,24 @@ styles: {
           }
 ```
 - Run `grunt watch`
+
+## Deploy basic html site to github pages
+- Have the files in a github repo
+- There must be a index.html file in the root folder
+- There must be a master or a gh-pages branch
+- In options > GitHUb Pages, select your master or gh-pages branch as the source
+
+## Point custom domain hosted by GoDaddy to site hosted in github pages
+Assuming that you own a domain and it is hosted in GoDaddy.
+- Navigate to your GoDaddy account > Domains
+- Click on your domain name
+- Go to Manage DNS
+- If you're not using the default Nameservers, change it to default.
+- Open [this site](https://help.github.com/en/articles/setting-up-an-apex-domain#configuring-a-records-with-your-dns-provider) in a new window. You'll see a list of 4 DNS that you'll need to copy in GoDaddy.
+- Back in GoDaddy, edit the first record which has type A, it should end up as follows:
+        - Type: A
+        - Name: @
+        - Value: the first DNS number you got from the github site
+        - TTL: 600 seconds, or whatever
+- For each of the other DNS, add a new record with similar settings.
+- In the root folder of your repo, add a new file CNAME which contains only your domain name ([example](https://github.com/luismartinezs/luis-martinez/blob/master/CNAME))
