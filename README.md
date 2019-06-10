@@ -24,6 +24,7 @@ I currently use ~~Windows 10~~macOSX, Visual Studio Code and npm.
 - [AUTOPREFIXER](#autoprefixer)
 - [Deploy basic html site to github pages](#deploy-basic-html-site-to-github-pages)
 - [Point domain to github pages](#point-domain-to-github-pages)
+- [Reset git in a repo](#reset-git-in-a-repo)
 
 ## [Create a new React app](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
 
@@ -367,3 +368,11 @@ Assuming that you own a domain and it is hosted in GoDaddy.
         - TTL: 600 seconds, or whatever
 - For each of the other DNS, add a new record with similar settings.
 - In the root folder of your repo, add a new file CNAME which contains only your domain name ([example](https://github.com/luismartinezs/luis-martinez/blob/master/CNAME))
+
+## Reset git in a repo
+
+I accidentally commited and pushed secret credentials in a repo *that I just created*. The simplest way to solve it was to entirely reset git (leave a clean git state, without any commits or config):
+
+- Delete the .git folder `rm -rf .git`
+- `git init`
+- Recreate the remote repo in github or wherever, and set it as origin
